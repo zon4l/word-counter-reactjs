@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --base-font-size: 1rem;
+
+    --font-size-20: calc(1.25*var(--base-font-size));
+    --font-size-24: calc(1.5*var(--base-font-size));
+    --font-size-42: calc(2.625*var(--base-font-size));
+
+    --base-text-color: #FFF;
+
+    --very-high-text-color: #FF0000;
+    --high-text-color: #FF5454;
+    --moderate-text-color: #FFBB54;
+    --repeated-text-color: #F8FFA4;
+
+    --main-bg-color: #191D32;
+    --content-bg-color: #282F44;
+    --heading-bg-color: #21263B;
+    --button-bg-color: #CE2D4F;
+    --button-bg-color-disabled: #3A182F;
+
+    --separation-line-color: #333B5B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--main-bg-color);
+    color: var(--base-text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+/* base stuff */
+::-webkit-scrollbar {
+    width: 5px;
+    border: 0;
+}
+
+/* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+} */
+
+::-webkit-scrollbar-thumb {
+    background: #191D32;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+textarea {
+    background-color: var(--content-bg-color);
+    border: 0;
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--base-text-color);
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+/* buttons */
+.count-btn {
+    font-size: var(--font-size-20);
+    font-weight: bold;
+    color: var(--base-text-color);
+    background-color: var(--button-bg-color);
+    border-radius: 10px;
+    border: 0;
+    padding: 18px 20px;
+}
+
+.count-btn:active {
+    background-color: var(--high-text-color);
+}
+
+.count-btn:disabled {
+    background-color: var(--button-bg-color-disabled);
+}
+
+.upload-file-btn {
+    padding: 12px 15px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--heading-bg-color);
+    color: var(--base-text-color);
+}
+
+/* flexbox */
+.text-center {
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+/* containers */
+.content-container {
+    width: 900px;
+    height: 250px;
+    overflow: scroll;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--content-bg-color);
+}
+
+/* margins */
+.p-main {
+    padding: 13.88% 26.5% 0px 26.5% ;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-18 {
+    margin-top: 18px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+/* font-sizes */
+.font-16 {
+    font-size: var(--base-font-size);
+}
+
+.font-20 {
+    font-size: var(--font-size-20);
+}
+
+.font-24 {
+    font-size: var(--font-size-24);
+}
+
+.font-42 {
+    font-size: var(--font-size-42);
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+/* color square props */
+.color-square {
+    border: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.bg-very-high {
+    background: var(--very-high-text-color);
+}
+
+.bg-high {
+    background: var(--high-text-color);
+}
+
+.bg-moderate {
+    background: var(--moderate-text-color);
+}
+
+.bg-repeated {
+    background: var(--repeated-text-color);
+}
+
+.bg-base {
+    background: var(--base-text-color);
+}
+
+/* table components */
+.hash-table {
+    border-collapse: collapse;
+    background-color: var(--content-bg-color);
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hash-table td, .hash-table th {
+    padding: 6px 25px;
+    text-align: left;
+}
+
+.hash-table td+td {
+    border-left: 1px solid var(--separation-line-color);
+}
+
+.hash-table th {
+    padding: 18px 25px;
+    background-color: var(--heading-bg-color);
+    font-weight: bold;
+}
+
+/* repeated text colors */
+.color-very-high {
+    color: var(--very-high-text-color);
+}
+
+.color-high {
+    color: var(--high-text-color);
+}
+
+.color-moderate {
+    color: var(--moderate-text-color);
+}
+
+.color-repeated {
+    color: var(--repeated-text-color);
+}
